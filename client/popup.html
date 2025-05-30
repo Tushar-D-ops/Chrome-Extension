@@ -2,23 +2,29 @@
 <html>
 <head>
   <title>AI Extension</title>
-  <style>
-    body { font-family: Arial; padding: 10px; width: 250px; }
-    select, button { width: 100%; padding: 8px; margin: 5px 0; }
-  </style>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <h3>AI Translator 🌐</h3>
-  <label for="lang">Select Language:</label>
-  <select id="lang">
-    <option value="Spanish">Spanish</option>
-    <option value="French">French</option>
-    <option value="Hindi">Hindi</option>
-    <option value="Japanese">Japanese</option>
-    <option value="German">German</option>
+  <!-- popup.html -->
+<div class="popup-container">
+  <h2>Text Helper AI</h2>
+
+  <label for="task">Choose a Task:</label>
+  <select id="task">
+    <option value="rewrite">Rewrite Professionally</option>
+    <option value="summarize">Summarize</option>
+    <option value="explain">Explain</option>
+    <option value="change-tone">Change Tone</option>
   </select>
-  <button id="setLang">Set Language</button>
-  <p id="status"></p>
+
+  <label for="inputText">Enter Text:</label>
+  <textarea id="inputText" rows="4"></textarea>
+
+  <button id="submitBtn">Generate</button>
+
+  <div id="outputArea" class="response-box"></div>
+</div>
+
 
   <script src="popup.js"></script>
 </body>

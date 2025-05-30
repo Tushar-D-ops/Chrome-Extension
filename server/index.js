@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 require('dotenv').config();
-const { Configuration, OpenAIApi } = require('openai');
+const {  OpenAI } = require('openai');
 
 const app = express();
 const port = 5000;
@@ -10,23 +10,28 @@ const port = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+const openai = new OpenAI({
+  apiKey: process.env.OPENROUTER_API_KEY,
+  baseURL: 'https://openrouter.ai/api/v1',
 });
-const openai = new OpenAIApi(configuration);
 
-app.post('/api/ask', async (req, res) => {
-  const { prompt } = req.body;
 
+app.post("/api/ask", async (req, res) => {
   try {
-    const response = await openai.createChatCompletion({
-      model: 'gpt-3.5-turbo',
-      messages: [{ role: 'user', content: prompt }],
+    const { prompt } = req.body;
+    console.log("🔹 Received prompt:", prompt);
+
+    const chatCompletion = await openai.chat.completions.create({
+      model: "gpt-3.5-turbo",
+      messages: [{ role: "user", content: prompt }],
     });
 
-    res.json({ result: response.data.choices[0].message.content });
+    console.log("✅ AI Response:", chatCompletion.choices[0].message.content);
+
+    res.json({ result: chatCompletion.choices[0].message.content });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    console.error("❌ AI error:", error);
+    res.status(500).json({ result: "AI error: " + error.message });
   }
 });
 
