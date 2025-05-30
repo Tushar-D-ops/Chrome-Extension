@@ -25,58 +25,47 @@ Since this extension is not published to the Chrome Web Store, follow these step
 git clone https://github.com/Tushar-D-ops/Chrome-Extension.git
 ```
 Or download the ZIP and extract it.
-2. Load the Extension in Chrome
+
+### 2. Load the Extension in Chrome
 Open Google Chrome
-
 Navigate to: chrome://extensions/
-
 Enable Developer Mode (toggle at top right)
-
 Click on "Load unpacked"
-
 Select the root folder where you extracted/cloned the extension (make sure it includes manifest.json)
 
 ✅ You should now see Text Helper AI listed among your Chrome extensions.
 
-🧠 How to Use
+### 🧠 How to Use
 Click on the extension icon in the Chrome toolbar.
-
 Choose a task from the dropdown:
-
 Rewrite Professionally
-
 Summarize
-
 Explain
-
 Change Tone
-
 Enter or paste the text you want to process.
-
 Click Generate and wait for the AI-enhanced result.
 
-🛠️ Tech Stack
+OR
+
+Select text from WebPage
+Right Click
+Then click on Ai assitance
+Select your task from list
+You will be provided your output
+
+### 🛠️ Tech Stack
 Frontend: HTML, CSS (modern gradients), JavaScript
-
 Backend: Node.js, Express.js
-
 AI Engine: OpenAI GPT
-
 Hosting: Render (for backend), GitHub (for source control)
 
-🙋‍♂️ Feedback or Contributions?
-Feel free to:
-
+### Feel free to:
 ⭐ Star this repo
-
 🐛 Create an issue
-
 📩 Connect with me on GitHub
 
-💡 Future Improvements (Ideas)
+### 💡 Future Improvements (Ideas)
 Add "Copy to Clipboard" button
-
 Add context menu integration
-
 Publish to Chrome Web Store for public use
 
