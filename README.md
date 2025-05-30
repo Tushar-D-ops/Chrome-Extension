@@ -27,45 +27,45 @@ git clone https://github.com/Tushar-D-ops/Chrome-Extension.git
 Or download the ZIP and extract it.
 
 ### 2. Load the Extension in Chrome
-Open Google Chrome
-Navigate to: chrome://extensions/
-Enable Developer Mode (toggle at top right)
-Click on "Load unpacked"
-Select the root folder where you extracted/cloned the extension (make sure it includes manifest.json)
+Open Google Chrome</br>
+Navigate to: chrome://extensions/</br>
+Enable Developer Mode (toggle at top right)</br>
+Click on "Load unpacked"</br>
+Select the root folder where you extracted/cloned the extension (make sure it includes manifest.json)</br>
 
 ✅ You should now see Text Helper AI listed among your Chrome extensions.
 
 ### 🧠 How to Use
-Click on the extension icon in the Chrome toolbar.
-Choose a task from the dropdown:
-Rewrite Professionally
-Summarize
-Explain
-Change Tone
-Enter or paste the text you want to process.
-Click Generate and wait for the AI-enhanced result.
+Click on the extension icon in the Chrome toolbar.</br>
+Choose a task from the dropdown:</br>
+Rewrite Professionally</br>
+Summarize</br>
+Explain</br>
+Change Tone</br>
+Enter or paste the text you want to process.</br>
+Click Generate and wait for the AI-enhanced result.</br>
 
 OR
 
-Select text from WebPage
-Right Click
-Then click on Ai assitance
-Select your task from list
-You will be provided your output
+Select text from WebPage</br>
+Right Click</br>
+Then click on Ai assitance</br>
+Select your task from list</br>
+You will be provided your output</br>
 
 ### 🛠️ Tech Stack
-Frontend: HTML, CSS (modern gradients), JavaScript
-Backend: Node.js, Express.js
-AI Engine: OpenAI GPT
-Hosting: Render (for backend), GitHub (for source control)
+Frontend: HTML, CSS (modern gradients), JavaScript</br>
+Backend: Node.js, Express.js</br>
+AI Engine: OpenAI GPT</br>
+Hosting: Render (for backend), GitHub (for source control)</br>
 
 ### Feel free to:
-⭐ Star this repo
-🐛 Create an issue
-📩 Connect with me on GitHub
+⭐ Star this repo</br>
+🐛 Create an issue</br>
+📩 Connect with me on GitHub</br>
 
 ### 💡 Future Improvements (Ideas)
-Add "Copy to Clipboard" button
-Add context menu integration
+Add "Copy to Clipboard" button</br>
+Add context menu integration</br>
 Publish to Chrome Web Store for public use
 
