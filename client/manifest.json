@@ -23,6 +23,6 @@
   },
   "host_permissions": [
     "http://localhost:5000/*",
-    "https://your-deployed-backend.com/*"
+    "https://chrome-extension-wq7r.onrender.com/*"
   ]
 }

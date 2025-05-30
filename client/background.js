@@ -39,7 +39,7 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
 
 async function fetchAIResponse(prompt) {
   try {
-    const response = await fetch("http://localhost:5000/api/ask", {
+    const response = await fetch("https://chrome-extension-wq7r.onrender.com/api/ask", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
